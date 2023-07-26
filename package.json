@@ -9,10 +9,7 @@
     },
     "Type": "module",
     "dependencies": {
-        "@react-navigation/native": "^6.1.6",
-        "@react-navigation/native-stack": "^6.9.12",
         "body-parser": "^1.20.2",
-        "concurrently": "^8.0.1",
         "cors": "^2.8.5",
         "dotenv": "^16.0.3",
         "expo": "~48.0.10",
@@ -24,7 +21,6 @@
     },
     "devDependencies": {
         "@babel/core": "^7.20.0",
-        "@react-native-community/eslint-config": "^3.2.0",
         "eslint": "^8.37.0"
     },
     "private": true
