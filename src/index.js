@@ -4,13 +4,13 @@ const path = require('path');
 const dotenv = require('dotenv')
 dotenv.config();
 
-// const apirouter = require('./routes/api.js');
+const apirouter = require('./routes/api.js');
 
 app.use(express.json());
 
 const PORT = 3000
 
-// app.use('/api', apirouter);
+app.use('/api', apirouter);
 
 app.get('/hi', (req, res) => {
     res.sendStatus(200);

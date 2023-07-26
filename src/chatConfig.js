@@ -1,5 +1,5 @@
-import { Configuration, OpenAIApi } from "openai";
-import * as dotenv from "dotenv"
+const { Configuration, OpenAIApi } = require("openai");
+const dotenv = require("dotenv")
 dotenv.config();
 
 const configuration = new Configuration({
@@ -9,7 +9,14 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const completion = await openai.createChatCompletion({
-    model: '',
+const configer = async () => {
+    return await openai.createChatCompletion({
+    model: 'gpt-3.5-turbo',
+    messages:[
+        {role: 'user', content: 'Hello World'}
+    ]
+    });
+}
 
-});
+
+module.exports = configer;
