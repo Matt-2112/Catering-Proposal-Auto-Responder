@@ -2,6 +2,7 @@ const configer = require('../chatConfig')
 
 const GPTController = {};
 
+
 GPTController.generateResponse = async (req, res, next) => {
     let prompt = req.query.prompt
     const completion = await configer(prompt);

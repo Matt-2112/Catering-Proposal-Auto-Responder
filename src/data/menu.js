@@ -8,7 +8,7 @@ const menu = {
       "Smoked Salmon Canapés",
       "Endive Boats with Curried Chicken",
       "Grilled Chicken on Bruscetta",
-      "Satay",
+      "Satay Skewers",
       "Quesadilla",
       "Sesame Shrimp",
       "Teriyaki Shrimp with Prosciutto",

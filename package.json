@@ -4,8 +4,7 @@
     "main": "src/index.js",
     "scripts": {
         "start": "node src/index.js",
-        "dev": "nodemon src/index.js",
-        "lint": "eslint ."
+        "dev": "nodemon src/index.js"
     },
     "Type": "module",
     "dependencies": {
@@ -13,15 +12,9 @@
         "cors": "^2.8.5",
         "dotenv": "^16.0.3",
         "expo": "~48.0.10",
-        "expo-status-bar": "~1.4.4",
         "express": "^4.18.2",
         "nodemon": "^2.0.22",
-        "openai": "^3.3.0",
-        "pg": "^8.11.0"
-    },
-    "devDependencies": {
-        "@babel/core": "^7.20.0",
-        "eslint": "^8.37.0"
+        "openai": "^3.3.0"
     },
     "private": true
 }
