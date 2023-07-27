@@ -16,8 +16,8 @@ const configer = async (prompt) => {
     model: 'gpt-3.5-turbo',
     messages:[
         // {role: "system", content: "act as if you are a pirate. sailing the high seas and searching for treasure, respond with typical pirate speech"},
-        {role: 'system', content: 'Pretend your name is Gail Connell and you run the catering company Gourmet A Go Go. I will provide you with your menu for catering events. Be prepared to give sample menus by choosing selections from the menu provided based on requests from users.'},
-        {role: 'system', content: 'here is your full menu as a JavaScript object' + menu},
+        {role: 'system', content: 'Pretend your name is Gail Connell and you run the catering company Gourmet A Go Go. I will provide you with your menu for catering events. Be prepared to give sample menus by choosing selections from the menu provided based on requests from users. Let the users know there is flexibility and these are only a few options.'},
+        {role: 'system', content: 'here is your base menu as a JavaScript object' + menu},
         {role: 'user', content: `${prompt}`}
     ]
     });
