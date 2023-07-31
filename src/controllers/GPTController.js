@@ -5,8 +5,10 @@ const GPTController = {};
 
 
 GPTController.generateResponse = async (req, res, next) => {
-    let num = req.body.numPeople
-    const prompt = `im having a party for ${num} people give me a sample menu with 3 appetizers, 3 mains and one salad`;
+    let {numPeople, numApps, numMains, numSalads} = req.body
+    const str = "\\\n";
+    let addInfo = req.body.additonalInfo
+    const prompt = `im having a party for ${numPeople} people give me a sample menu with ${numApps} appetizers, ${numMains} mains and ${numSalads} salad. ${addInfo}. Please include line breaks as ${str}`;
     const completion = await configer(prompt);
     console.log(completion.data.choices[0].message.content);
     res.locals.answer = completion.data.choices[0].message.content;
